@@ -1,7 +1,6 @@
 import { Gender, Species, Status } from "../enums";
 import { Location } from "./location";
 
-
 export interface Character {
     id:       number;
     name:     string;
@@ -16,5 +15,3 @@ export interface Character {
     url:      string;
     created:  string;
 }
-
-

@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TypeScript</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/img/favicon.png">
-</head>
-<body>
-    <h1>Curso de TypeScript</h1>
-    <hr>
-    
-    <script src="bundle.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TypeScript</title>
+        <link rel="shortcut icon" href="assets/img/favicon.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">        
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <h1>Curso de TypeScript</h1>
+        <hr>
+
+        <div class="container text-center">
+            <h1>Nuevo Personaje</h1>
+            <form id="form">
+                <div class="row">
+                    <div class="col">
+                        <div id="selectSatus" class="input-group mb-3 text-dark">
+                            <label class="input-group-text" for="inputGroupSelect01">Estado</label>
+                        </div>
+                        <div id="selectSpecies" class="input-group mb-3 text-dark">
+                            <label class="input-group-text" for="inputGroupSelect02">Especie</label>
+                        </div>
+                        <div id="selectGender" class="input-group mb-3 text-dark">
+                            <label class="input-group-text" for="inputGroupSelect03">Genero</label>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">Nombre</label>
+                            <input required type="text" class="form-control" placeholder="Nombre" id="name">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">Tipo</label>
+                            <input required type="text" class="form-control" placeholder="Tipo" id="type">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">Nombre de su ubicación</label>
+                            <input required type="text" class="form-control" placeholder="Nombre ubicación" id="nameUbication">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">Url de la ubicación</label>
+                            <input required type="text" class="form-control" placeholder="Url ubicación" id="urlUbication">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">Nombre de su origen</label>
+                            <input required type="text" class="form-control" placeholder="Nombre origen" id="nameOrigin">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">Url de su origen</label>
+                            <input required type="text" class="form-control" placeholder="Url origen" id="urlOrigin">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">Url Imagen</label>
+                            <input required type="text" class="form-control" placeholder="Url Imagen" aria-describedby="image" id="image">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">Url</label>
+                            <input required type="text" class="form-control" placeholder="Url" id="url">
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text">Fecha Creación </label>
+                            <input required type="date" class="form-control" placeholder="Fecha Creación" id="created">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group pb-2">
+                            <span class="input-group-text">Episodios: (separa los links con una coma)</span>
+                            <textarea id="episode" class="form-control" aria-label="With textarea" placeholder="episodios"></textarea>
+                        </div>
+                    </div>                        
+                </div>
+                <button type="submit" class="btn btn-primary">Crear Personaje</button>
+            </form>
+        </div>
+        
+        <div class="container-fluid tbl-cont-element">
+            <h1>Lista Personajes</h1>
+            <div id="listCharactersTable"></div>
+        </div>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="bundle.js"></script>
+    </body>
 </html>
